@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-body">
+
+    <h4>Red de Agentes</h4>
+
+    <div class="card-agentes mb-3" style="max-width: 540px;"  *ngFor= " let redAgentes of agentes">
+      <div class="row no-gutters">
+        <div class="content-img col-md-4">
+          <img [src]="redAgentes.img"  alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ redAgentes.nombre }}</h5>
+            <p class="card-text"><small class="text-muted">{{ redAgentes.profesion }}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

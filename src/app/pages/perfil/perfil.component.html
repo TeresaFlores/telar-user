@@ -1,0 +1,83 @@
+
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="perfil col-sm-12 col-lg-6">
+        <img src="../../../assets/img/perfil.png" alt="people">
+        <h4>Claudia Rosas Martinez</h4>
+        <p>Fotógrafa</p>
+       </div>
+       <div class="perfil-contact col-sm-12 col-lg-6">
+          <h5>Contacto</h5>
+          <ul >
+            <li><i class="fa fa-envelope"></i> rosa_clau@gmail.com</li>
+            <li> <i class="fa fa-mobile"></i> 55 8392 6709</li>
+            <li> <i class="fa fa-phone-square"></i> 5798 6543</li>
+            <li><i class="fa fa-facebook-square"></i> Claudia Rosas Martinez</li>
+            <li><i class="fa fa-instagram"></i> clau.fotografia</li>
+            <li><i class="fa fa-twitter-square"></i> claudia_foto</li>
+            <li><i class="fa fa-linkedin"></i> claudia-rosas-m</li>
+            <li><i class="fa fa-youtube-square"></i> Naturaleza Maravillosa</li>
+          </ul>
+       </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-body">
+    <div class=" row">
+      <div class=" col-sm-12 col-lg-6">
+        <h5>Información</h5>
+         <div >
+            <ul class="list-group list-group-flush">
+              <li *ngFor="let contacto of infoContac; let i= index" class="list-group-item">{{ contacto }}</li>
+            </ul>
+         </div>
+       </div>
+       <div class="contain-inf col-sm-12 col-lg-6">
+        <button (click)="addSpecialty = !addSpecialty"   type="button" class="btn  " >Especialidad</button>
+        <button (click)=" addTechnique = ! addTechnique"  type="button" class="button-med btn " >Técnica</button>
+        <button (click)="addPopulation= !addPopulation"  type="button" class=" btn  " >Población</button>
+        <div class="containerButton  ">
+          <div >
+            <div *ngIf="addSpecialty">
+              <p>Fotografia</p>
+            </div>
+            <div *ngIf=" addTechnique">
+              <p>Blanco y Negro </p>
+            </div>
+            <div *ngIf="addPopulation">
+              <p>Estado de México</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="container-agente row">
+      <h5>Acerca de mi trabajo</h5>
+      <p>Tomo fotografía de paisaje, me gusta utilizar cámaras análogas. He viajado a diferentes regiones
+        de México en busca de los mejores paisajes.</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="container-agente row">
+      <h5>Lugar de residencia</h5>
+      <p></p>
+      <div>
+        <img src="../../../assets/img/mapa.png" alt="map">
+      </div>
+    </div>
+  </div>
+</div>
+
